@@ -1,0 +1,17 @@
+node_modules
+.env
+.env.local
+uploads
+*.log
+.DS_Store
+frontend/node_modules
+frontend/dist
+dist
+backend/**/*.ts
+**/*.ts
+tsconfig.json
+.vscode/
+.devcontainer/
+Dockerfile
+docker-compose.yml
+README.md

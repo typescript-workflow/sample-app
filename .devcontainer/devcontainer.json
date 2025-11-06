@@ -1,0 +1,25 @@
+{
+  "name": "durabull",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/durabull-app",
+  "forwardPorts": [3000, 5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite (frontend)",
+      "onAutoForward": "openBrowser",
+      "visibility": "public",
+      "protocol": "http"
+    },
+    "3000": {
+      "label": "API Server",
+      "onAutoForward": "notify",
+      "visibility": "public",
+      "protocol": "http"
+    }
+  },
+  "postCreateCommand": "npm i",
+  "remoteEnv": {
+    "REDIS_URL": "redis://redis:6379"
+  }
+}
