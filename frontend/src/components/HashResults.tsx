@@ -19,6 +19,8 @@ function HashResults({ results, onReset }: HashResultsProps) {
       <div className="results-card">
         <div className="results-header">
           <h2>✅ Hash Results</h2>
+        </div>
+        <div className="results-actions">
           <button onClick={onReset} className="btn btn-secondary btn-small">
             Upload Another
           </button>
